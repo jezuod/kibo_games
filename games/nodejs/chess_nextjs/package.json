@@ -1,0 +1,11 @@
+{
+    "name": "chess",
+    "version": "0.0.1",
+    "dependencies": {
+        "package.json": "^2.0.1",
+        "socket.io": "2.3.0"
+    },
+    "scripts": {
+        "dev": "npm i && node server.js"
+    }
+}

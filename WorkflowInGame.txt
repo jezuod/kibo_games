@@ -1,0 +1,35 @@
+
+    Server (kibo) 3000 backend
+            Sockets 
+                Juego   
+                   Se comunica con el SOCKET pasandole el idUser,gameId, EVENT_NAME, TEXTO
+            
+                        
+    Cliente (kibo) - 3000 frontend
+        URL:juego/conecta4
+            SocketServidor
+                TU NAVEGADOR QUE ESTÁ JUGANDO EN TIEMPO REAL                        ---A-4
+                    EVENT_NAME (REACT)
+                        PARTIDA_GANADA
+                        PARTIDA_PERDIDA
+                        LOGRO_NUEVO (TEXTO)
+
+    Juego  3003
+        SOCKET AL SERVIDOR KIBO
+            /SERVER/endpoint?idUser=rrris402@gmail.com&gameId=connect4)       ---A-1
+
+
+
+
+
+////ORDEN DE DESARROLLO      A-1 Y 2
+////ORDEN DE DESARROLLO      A-3 Y 4
+
+
+
+//SALVA:
+EVENT_NAME (REACT)
+    COMPONENTES 
+                        PARTIDA_GANADA_DIALOG
+                        PARTIDA_PERDIDA_DIALOG
+                        LOGRO_NUEVO (TEXTO)_DIALOG

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escaleras y serpientes</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="board"></div>
+    <img src="images/red_piece.png" alt="" hidden="true" id="red-piece" />
+    <img src="images/blue_piece.png" alt="" hidden="true" id="blue-piece" />
+    <img src="images/yellow_piece.png" alt="" hidden="true" id="yellow-piece" />
+    <img src="images/green_piece.png" alt="" hidden="true" id="green-piece" />
+    <div>
+      <!-- CONTAINER DEL TABLE -->
+      <div class="container">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <!-- CONTAINER DE LAS HERRAMIENTAS DE LA IZQUIERDA -->
+      <div>
+        <div class="info-box">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-input"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+            <button class="btn  draw-border" id="start-btn">Join</button>
+          </div>
+        </div>
+        <div id="players-box">
+          <h6>Players currently online:</h6>
+          <br />
+          <table id="players-table"></table>
+        </div>
+        <div id="current-player"></div>
+        <!-- TODO: PONER HIDEN -->
+        <button class="btn draw-border" id="roll-button" hidden >Roll</button>
+        <button class="btn draw-border" id="restart-btn" >Restart</button>
+
+        <div class="dice">
+          <img src="./images/dice/dice1.png" alt="" id="dice" />
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

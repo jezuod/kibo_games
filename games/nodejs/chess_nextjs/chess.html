@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Chess</title>
+		<meta name="description" content="Chess application">
+		<meta name="author" content="Kibo Games">
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='styles.css?v3' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="container" class="clearfix">
+				
+			</div><!--/#container -->
+			<footer id="pageFooter">
+			<small>Developed by Kibo</small><br/>
+			<small>&copy; 2024 Kibo Games</small>
+			</footer>
+			<div class="hiddenContainer"></div>
+		</div><!--/#wrapper -->
+		
+ 		<script src="/socket.io/socket.io.js"></script>
+ 		<script src="scripts/settings.js?v2"></script>
+ 		<script src="scripts/utils.js?v3"></script>
+ 		<script src="scripts/Analyzer.js?v2"></script>
+ 		<script src="scripts/GamePlay.js"></script>
+ 		<script src="scripts/OnlinePlay.js"></script>
+ 		<script src="scripts/ui.js?v3"></script>
+		<script>
+			CHESSAPP.GamePlay.init(gameSettings);
+		</script>
+	</body>
+</html>
